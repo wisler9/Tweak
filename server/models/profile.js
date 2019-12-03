@@ -6,6 +6,17 @@ module.exports = function(sequelize, DataTypes) {
     bio: DataTypes.TEXT,
     experience: DataTypes.TEXT
     });
-
+    Profile.associate = function(models) {
+        Profile.belongsToMany(models.User, {
+          foreignKey: {
+            allowNull: false,
+            defaultValue: 2
+          },
+          as: "userProfile",
+    
+          through: models.User
+        });
+      };
     return Profile;
 };
+

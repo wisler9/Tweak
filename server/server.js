@@ -1,8 +1,8 @@
 var db = require("./models");
 var express = require("express");
 var app = express();
-var PORT = process.env.PORT || 3000;
-
+var PORT = process.env.PORT || 8080;
+var PORT = 3001;
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -17,5 +17,15 @@ db.sequelize.sync(syncOptions).then(function() {
         PORT
       );
     });
-  });
+});
   
+  
+
+
+  // Routes
+  app.get("/", function(req, res) {
+      res.send("<h1>We are the world!!!</h1>");
+});
+  
+  
+ 

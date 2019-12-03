@@ -4,6 +4,18 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     User.associate = function(models) {
+      User.belongsToMany(models.Profile, {
+        foreignKey: {
+          allowNull: false,
+          defaultValue: 2
+        },
+        as: "userProfile",
+  
+        through: models.User
+      });
+    };
+
+    User.associate = function(models) {
         // We're saying that a Post should belong to an Author
         // A Post can't be created without an Author due to the foreign key constraint
         User.hasMany(models.Tweak, {
@@ -11,7 +23,7 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false,
             defaultValue: 2
           },
-          as: "userTweak",
+          as: "userTweaks",
     
           through: models.Tweak
         });
