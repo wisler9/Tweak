@@ -28,4 +28,3 @@ db.sequelize.sync(syncOptions).then(function() {
 });
   
   
- 
