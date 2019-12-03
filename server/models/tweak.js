@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false,
             defaultValue: 2
           },
-          as: "tweaks",
+          as: "userTweaks",
     
           through: models.User
         });
