@@ -1,41 +1,30 @@
-// Dependencies
-const express = require("express");
-const mysql = require("mysql");
-
-// Sets up the Express App
-const app = express();
-var PORT = 3001;
+var db = require("./models");
+var express = require("express");
+var app = express();
 var PORT = process.env.PORT || 8080;
-
-
-// Database connection
-
-/*var connection = mysql.createConnection({
-    host: "localhost",
-    port: 0000,
-    user: "root",
-    password: "",
-    database: "top_songsDB"
-  });
-  
-  connection.connect(function(err) {
-    if (err) throw err;
-  });*/
-
-
-// Sets up the Express app to handle data parsing
-app.use(express.urlencoded({ extended: true }));
+var PORT = 3001;
+// Middleware
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+app.use(express.static("public"));
+
+db.sequelize.sync(syncOptions).then(function() {
+    app.listen(PORT, function() {
+      console.log(
+        "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+        PORT,
+        PORT
+      );
+    });
+});
+  
+  
 
 
-// Routes
-app.get("/", function(req, res) {
-    res.send("<h1>We are the world!!!</h1>");
-  });
-
-
-// Listener
-app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-  });
+  // Routes
+  app.get("/", function(req, res) {
+      res.send("<h1>We are the world!!!</h1>");
+});
+  
+  
