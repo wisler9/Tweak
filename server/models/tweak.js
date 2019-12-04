@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
     Tweak.associate = function(models) {
         Tweak.belongsTo(models.User, {
           
-          as: "userTweaks",
+          as: "TweakID",
     
           through: models.User
         });
