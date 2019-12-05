@@ -9,8 +9,8 @@ import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import SignUp from "./pages/SignUp";
 import Home from "./pages/Home";
 
-import Card from "./components/Card";
-import ListItems from "./components/ListItems";
+// import Card from "./components/Card";
+// import ListItems from "./components/ListItems";
 
 
 class App extends Component {
