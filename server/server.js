@@ -41,8 +41,8 @@ app.use("/api", tweak);
 var user = require("./routes/user");
 app.use("/api", user);
 
-var comments = require("./routes/comments");
-app.use("/api", comments);
+// var comments = require("./routes/comments");
+// app.use("/api", comments);
 
    
 
@@ -52,9 +52,9 @@ app.use("/api", comments);
 app.get("/", function(req, res) {
 
 });
-app.get("/comments", function(req, res) {
-  res.send("comments");
-});
+// app.get("/comments", function(req, res) {
+//   res.send("comments");
+// });
 app.get("/tweaks", function(req, res) {
   res.send("tweaks");
 });
