@@ -1,7 +1,7 @@
 
 import React, {Component} from "react";
-import SignUp from "./components/SignUp";
-import Login from "./components/Login";
+import SignUp from "./pages/SignUp";
+import Home from "./pages/Home";
 import Card from "./components/Card";
 import ListItems from "./components/ListItems";
 
@@ -38,7 +38,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Login />
+        <Home />
       <SignUp />
       <h1>Hello Tweak!!!</h1>
   
