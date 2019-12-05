@@ -1,19 +1,23 @@
 module.exports = function(sequelize, DataTypes) {
-    var User = sequelize.define("user", {
-    tweaks: DataTypes.TEXT
+    var User = sequelize.define("User", {
+      userName: DataTypes.STRING,
+      email: DataTypes.TEXT,
+      password: DataTypes.TEXT,
+      bio: DataTypes.TEXT,
+      experience: DataTypes.TEXT
     });
 
-    User.associate = function(models) {
-      User.belongsToMany(models.Profile, {
-        foreignKey: {
-          allowNull: false,
-          defaultValue: 2
-        },
-        as: "userProfile",
+    // User.associate = function(models) {
+    //   User.belongsToMany(models.Profile, {
+    //     foreignKey: {
+    //       allowNull: false,
+    //       defaultValue: 2
+    //     },
+    //     as: "userProfile",
   
-        through: models.User
-      });
-    };
+    //     through: models.User
+    //   });
+    // };
 
     User.associate = function(models) {
         // We're saying that a Post should belong to an Author
@@ -23,9 +27,7 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false,
             defaultValue: 2
           },
-          as: "userTweaks",
-    
-          through: models.Tweak
+          as: "Tweaks"
         });
       };
 
