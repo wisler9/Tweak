@@ -1,4 +1,7 @@
+
 import React, {Component} from "react";
+import SignUp from "./components/SignUp";
+import Login from "./components/Login";
 import Card from "./components/Card";
 import ListItems from "./components/ListItems";
 
@@ -35,6 +38,8 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Login />
+      <SignUp />
       <h1>Hello Tweak!!!</h1>
   
        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
