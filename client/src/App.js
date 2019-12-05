@@ -1,5 +1,7 @@
 
 import React, {Component} from "react";
+import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import Card from "./components/Card";
@@ -37,10 +39,20 @@ class App extends Component {
 
   render() {
     return (
+      <Router>
       <div>
-        <Login />
-      <SignUp />
-      <h1>Hello Tweak!!!</h1>
+
+        <Switch>
+        <Route path ="/signup" component={SignUp}/>
+         <Route path ="/" component={Login}/>
+         
+         
+
+        </Switch>
+
+        
+      
+      {/* <h1>Hello Tweak!!!</h1>
   
        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
        <a className="navbar-brand" href="/">
@@ -49,9 +61,9 @@ class App extends Component {
        <a className="navbar-brand" href="/user">
         Profile
         </a>
-        </nav>
+        </nav> */}
   
-      <Card 
+      {/* <Card 
       value={this.state.tweak}
       onChange={this.handleInputChange}
       name="tweak"
@@ -59,9 +71,10 @@ class App extends Component {
        />
        <ListItems 
        tweaks={this.state.tweaks}
-       />
+       />  */}
 
       </div>
+          </Router>
     )
     }
 

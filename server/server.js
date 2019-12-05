@@ -5,8 +5,8 @@ var db = require("./models");
 var express = require("express");
 // var path = require("path");
 var app = express();
-var PORT = process.env.PORT || 8080;
-var PORT = 3001;
+var PORT = process.env.PORT || 3001;
+
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
@@ -50,7 +50,7 @@ app.use("/api", comments);
 
 
 app.get("/", function(req, res) {
-  res.send("<h1>We are the world!!!</h1>");
+
 });
 app.get("/comments", function(req, res) {
   res.send("comments");
