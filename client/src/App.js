@@ -1,11 +1,11 @@
 import React from "react";
-import SignUp from "./components/SignUp";
-import Login from "./components/Login";
+import SignUp from "./components/signUp-form";
+import LoginForm from "./components/login-form";
 
 function App() {
   return (
     <div>
-      <Login />
+      <LoginForm />
       <SignUp />
     </div>
   );

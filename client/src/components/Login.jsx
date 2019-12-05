@@ -1,29 +1,58 @@
-import React, { Component } from 'react';
+import React from "react";
+import {gql, graphql} from "react-apollo";
+import LoginForm from "./login-form";
+import SignUp from "signUp-form";
 
-function Login() {
-    return(
-     <div className="container">
-        <form>
-            <div className="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+class Login extends React.Component {
+    state = {
+        email: "",
+        password: "",
+    }
+
+    onChange = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value,
+        });
+    }
+
+    onSubmit = async () => {
+        const response = await this.props.mutate({
+            variables: this.state,
+        });
+        const { token, refreshToken } = response.data.login;
+        console.log(response);
+        localStorage.setItem("token", token);
+        localStorage.setItem("refreshToken", refreshToken);
+    }
+
+    render(){
+        return (
+            <div>
+                <input
+                    name="email"
+                    placeholder="Email"
+                    onChange={e=> this.onChange(e)}
+                    value={this.state.email} />
+                <input
+                    name="password"
+                    placeholder="Password"
+                    type="password"
+                    onChange={e=> this.onChange(e)}
+                    value={this.state.password} /> 
+                <br />
+                <button onClick={() => this.onSubmit()} type="primary">Login</button>   
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
-            </div>
-            <div className="form-group form-check">
-                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                <label className="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
-        </form>
-    </div>
-  );
-}   
+        );
+    }
+}
 
-       
+const mutation = gql`
+mutation ($email: String!, $password: String!) {
+    login(email: $email, password: $password) {
+        token
+        refresToken
+    }
+}
+`;
 
-
-export default Login;
+export default graphql(mutation)(Login);
