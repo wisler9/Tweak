@@ -1,6 +1,9 @@
 var db = require("./models");
+// Require axios and cheerio. This makes the scraping possible
+// var axios = require("axios");
+// var cheerio = require("cheerio")
 var express = require("express");
-var path = require("path");
+// var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 8080;
 var PORT = 3001;
@@ -41,6 +44,8 @@ app.use("/api", user);
 var comments = require("./routes/comments");
 app.use("/api", comments);
 
+   
+
 //routes
 
 
@@ -53,6 +58,26 @@ app.get("/comments", function(req, res) {
 app.get("/tweaks", function(req, res) {
   res.send("tweaks");
 });
+
+// app.get("/explore", function(req, res){
+//   // console.log("random string");
+//   axios.get("https://www.codemag.com/magazine").then(function(response) {
+//     var $ = cheerio.load(response.data);
+
+//      console.log(response.data);
+
+//     $("ul.article-list").each(function(i, element){
+//       var title = $(element).children("a").text();
+
+//       // console.log(title);
+
+//       // var link = $(element).children("a").attr("href");
+//       // console.log();
+//     })
+  
+//   })
+ 
+// })
 
   
   
