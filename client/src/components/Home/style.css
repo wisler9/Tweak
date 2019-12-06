@@ -72,7 +72,7 @@
     background: #FFFFFF;
 }
 
-#InputEmail1 {
+#Email {
     position: absolute;
     width: 30%;
     left: 3%;
@@ -88,7 +88,7 @@
     left: 3%;
 }
 
-#InputPassword1 {
+#Password {
     position: absolute;
     width: 32%;
     left: 37%;
