@@ -1,21 +1,23 @@
 import React from "react";
+import "../components/SignUp/style.css";
 
 function SignUp() {
   return (
     <div className="container">
+        <div className="row">Create your account</div>
+        <h1>&lt;TWEAK/&gt;</h1>
+        <a href="https://placeholder.com"/><img src="https://via.placeholder.com/200" alt="" class="img-thumbnail" placeholder="Image"></img>
         <form>
             <div className="form-group">
                 <label for="userName">User Name</label>
-                <input type="text" className="form-control" id="userName" aria-describedby="userName" placeholder="Enter username" />
-                <small id="emailHelp" className="form-text text-muted"></small>
+                <input type="text" className="form-control" id="exampleUserName1" aria-describedby="userName" placeholder="Enter username" />
             </div>
             <div className="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="InputEmail1">Email address</label>
                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div className="form-group">
-                <label for="exampleInputPassword1">Password</label>
+                <label for="InputPassword1">Password</label>
                 <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
             </div>
             <div className="form-group">
@@ -27,7 +29,7 @@ function SignUp() {
                 <label for="experience">Experience</label>
                 <textarea className="form-control" id="experienceTextarea" rows="3"></textarea>
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" className="btn btn-secondary">Submit</button>
             </form>
     </div>
   );
