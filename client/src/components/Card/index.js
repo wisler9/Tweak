@@ -4,7 +4,7 @@ const Card = (props) => {
     console.log(props)
     return (
         <div className="card bg-light text-black">
-            <img src="..." className="card-img" alt="..."/>
+            {/* <img src="..." className="card-img" alt="..."/> */}
             {/* <h5 className="card-title">Tweak Title</h5> */}
             <div className="form-group">
             <textarea value={props.value} className="form-control" rows="5" name="tweak" onChange={props.onChange}/>
