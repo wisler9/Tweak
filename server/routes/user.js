@@ -6,10 +6,7 @@ var db = require("../models/index");
 
 //get users
 router.get("/user", function(req, res) {
-    db.User.findAll({
-     
-  
-    })
+    db.User.findAll({ })
     .then(function(user){
       res.json(user);
     })
@@ -19,7 +16,6 @@ router.get("/user", function(req, res) {
 router.get("/user/:id", function(req, res) {
   db.User.findOne({
    where:{ id: req.params}
-
   })
   .then(function(user){
     res.json(user);
