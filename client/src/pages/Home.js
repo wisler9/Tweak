@@ -6,7 +6,7 @@ function Home() {
      <div className="container">
          <div className="row">
             <div className="col md-6" id="app-promo">
-                <div className="container app-promo">
+                <div className="container-home app-promo">
                     <h1>&lt;TWEAK/&gt;</h1>
 
                     <h3 className="homeText" id="box1">Follow your interests</h3>
@@ -19,12 +19,12 @@ function Home() {
              <form>
                 <div className="form-group">
                 <label for="InputEmail1"></label>
-                <input type="email" className="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Username or email" />
+                <input type="email" className="form-control" id="Email" aria-describedby="emailHelp" placeholder="Username or email" />
                 <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
                 <label for="InputPassword1"></label>
-                <input type="password" className="form-control" id="InputPassword1" placeholder="Password" />
+                <input type="password" className="form-control" id="Password" placeholder="Password" />
                 </div>
                 <div className="form-group form-check">
                 </div>

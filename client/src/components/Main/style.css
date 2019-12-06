@@ -1,8 +1,25 @@
-body {
-    background-color: lightgray;
+
+.logo {
+    position: absolute;
+    width: 20%;
+    height: 45px;
+    left: 62%;
+
+    background: #FFFFFF;
+    padding-left: 4%;
+    top: 12.69%;
+    bottom: 19.54%;
+
+    font-family: Khula;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #AD1616;
 }
 
-.container.signup {
+.container.menu {
     
     padding: 1.5% 4%;
     height: 82%;
@@ -15,7 +32,15 @@ body {
 
 }
 
-.row.head {
+.btn-secondary {
+    position: absolute;
+    top: 4%;
+    left: 75%;
+
+   border-radius: 30px
+}
+
+/* .row.head {
     font-family: Helvetica Neue;
     font-style: normal;
     font-weight: bold;
@@ -91,31 +116,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.logo {
-    position: absolute;
-    width: 20%;
-    height: 45px;
-    left: 62%;
 
-    background: #FFFFFF;
-    padding-left: 4%;
-    top: 12.69%;
-    bottom: 19.54%;
 
-    font-family: Khula;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
 
-    color: #AD1616;
-}
-
-.btn-secondary {
-    /* position: absolute;
-    top: 4%;
-    left: 75%; */
-
-   border-radius: 30px
-}
-
+ */

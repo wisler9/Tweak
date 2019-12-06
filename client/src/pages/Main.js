@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../components/Main/style.css";
 import Card from "../components/Card/index"
 import ListItems from "../components/ListItems/index"
 
@@ -34,16 +35,10 @@ class Main extends Component {
     render() {
       return (
         <div>
-         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a className="navbar-brand" href="/">
-                {`<TWEAK/>`}
-              </a>
-        <a className="navbar-brand" href="/user">
-              Profile
-               </a>
-               </nav> 
-          
-              <Card 
+          <div className="container menu">
+          <h1 className="logo">&lt;TWEAK/&gt;</h1>
+          <a className="navbar-brand" href="/user/:id">Profile</a>
+          <Card 
               value={this.state.tweak}
               onChange={this.handleInputChange}
               name="tweak"
@@ -52,6 +47,10 @@ class Main extends Component {
                <ListItems 
                tweaks={this.state.tweaks}
                />  
+          </div>
+                
+
+
         </div>
         
       )
