@@ -3,7 +3,7 @@ import React,  {Component} from 'react';
 const Card = (props) => {
     console.log(props)
     return (
-        <div className="card bg-dark text-white">
+        <div className="card bg-light text-black">
             <img src="..." className="card-img" alt="..."/>
             {/* <h5 className="card-title">Tweak Title</h5> */}
             <div className="form-group">
