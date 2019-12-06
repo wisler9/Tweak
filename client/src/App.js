@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-// import SignUp from "./components/signUp-form";
-import LoginForm from "./components/login-form";
-// import Login from "./components/Login";
-
-function App() {
-  return (
-    <div>
-      {/* <Login /> */}
-      <LoginForm />
-      {/* <SignUp /> */}
-    </div>
-  );
-}
-=======
-
 import React, {Component} from "react";
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
@@ -87,6 +70,6 @@ class App extends Component {
 
 
 
->>>>>>> 5972130eec1af316b490d1a294a16dea2c177a73
+
 
 export default App;
