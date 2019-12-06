@@ -3,7 +3,7 @@ import "../components/Home/style.css";
 
 function Home() {
     return(
-     <div className="container ">
+     <div className="container">
          <div className="row">
             <div className="col md-6" id="app-promo">
                 <div className="container-home app-promo">
