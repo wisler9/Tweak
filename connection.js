@@ -35,7 +35,6 @@ var connection = mysql.createConnection({
       function(err, res) {
         if (err) throw err;
         console.log(res.affectedRows + " user inserted!\n");
-        // Call updateProduct AFTER the INSERT completes
       }
     );
   

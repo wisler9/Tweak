@@ -1,5 +1,5 @@
 import React from 'react';
-
+import LoginInfo from "./Login-info";
 
 class Login extends React.Component {
     constructor(props) {
@@ -26,16 +26,12 @@ class Login extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
                     <label for="inputEmail">Email address</label>
-                    <input type="email" className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" onChange={this.handleChange} />
+                    <input type="email" className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="{this.props.email}" onChange={this.handleChange} />
                     <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
                     <label for="inputPassword">Password</label>
-                    <input type="password" className="form-control" id="inputPassword" placeholder="Password" onChange={this.handleChange} />
-                </div>
-                <div className="form-group form-check">
-                    <input type="checkbox" className="form-check-input" id="exampleCheck1" onChange={this.handleChange}/>
-                    <label className="form-check-label" for="exampleCheck1">Check me out</label>
+                    <input type="password" className="form-control" id="inputPassword" placeholder="{this.props.password}" onChange={this.handleChange} />
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
