@@ -35,7 +35,7 @@ function Home() {
 
                 <h4>Join Tweak today.</h4>
 
-                <button type="submit" className="btn btn signIn">Sign up</button>
+                <button type="submit" className="btn signIn">Sign up</button>
                 <button type="submit" className="btn btn-outline login">Log in</button>
              </form>
             </div>

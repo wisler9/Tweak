@@ -29,7 +29,7 @@ function SignUp() {
                 <label for="experience">Experience</label>
                 <textarea className="form-control" id="experienceTextarea" rows="3"></textarea>
             </div>
-            <button type="submit" className="btn btn-secondary">Submit</button>
+            <button type="submit" className="btn btn-secondary createBtn">Submit</button>
             </form>
     </div>
   );
