@@ -1,50 +1,73 @@
 import React from "react";
+import axios from  "axios";
+
 
 class SignUp extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {value: ''};
+      this.state = {
+        username:"",
+        email:"",
+        password:"",
+        bio:"",
+        experience:""
+      };
   
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
   
     handleChange(event) {
-      this.setState({value: event.target.value});
+        // event.preventDefault();
+        this.setState({[event.target.name] : event.target.value});
+        //   console.log(event.target.name);
     }
   
     handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.value);
+        // console.log(this.state.userName)
+        console.log("dssddfs")
       event.preventDefault();
+      axios.post('/api/user', {
+        userName: this.state.userName,
+        email: this.state.email,
+        password: this.state.password,
+        bio: this.state.bio,
+        experience: this.state.experience,
+      }).then( res => {
+            console.log(res)
+      })
     }
+
+    
 
 
     render() {
+        console.log(this.state);
         return (
             <div className="container">
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label for="userName">User Name</label>
-                        <input type="text" className="form-control" id="userName" aria-describedby="userName" placeholder="Enter username" />
+                        <input type="text" onChange={this.handleChange} name="username" className="form-control" id="userName" aria-describedby="userName" placeholder="Enter username" />
                         <small id="emailHelp" className="form-text text-muted"></small>
                     </div>
                     <div className="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                        <label for="userEmail">Email address</label>
+                        <input type="email"  onChange={this.handleChange} name="email"  className="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="Enter email" />
                         <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div className="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        <label for="userPassword">Password</label>
+                        <input type="password"  onChange={this.handleChange} name="password" className="form-control" id="userPassword" placeholder="Password" />
                     </div>
                     <div className="form-group">
-                        <label for="bio">Bio</label>
-                        <textarea className="form-control" id="bioTextarea" rows="3"></textarea>
+                        <label for="userBio">Bio</label>
+                        <textarea  onChange={this.handleChange}  name="bio" className="form-control" id="userBio" rows="3"></textarea>
                     </div>
                     
                     <div className="form-group">
-                        <label for="experience">Experience</label>
-                        <textarea className="form-control" id="experienceTextarea" rows="3"></textarea>
+                        <label for="userExperience">Experience</label>
+                        <textarea  onChange={this.handleChange}  name="experience" className="form-control" id="userExperience" rows="3"></textarea>
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>
                     </form>

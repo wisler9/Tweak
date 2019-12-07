@@ -38,8 +38,8 @@ class App extends Component {
     return (
       <div>
         <Login />
-      <SignUp />
-      <h1>Hello Tweak!!!</h1>
+        <SignUp />
+        <h1>Hello Tweak!!!</h1>
   
        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
        <a className="navbar-brand" href="/">
