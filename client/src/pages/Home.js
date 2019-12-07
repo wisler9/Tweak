@@ -65,8 +65,12 @@ function Home(props) {
 
                 <h4>Join Tweak today.</h4>
 
+<<<<<<< HEAD
                 <button type="submit" className="btn btn signIn" >Sign up</button>
                 
+=======
+                <button type="submit" className="btn signIn">Sign up</button>
+>>>>>>> master
                 <button type="submit" className="btn btn-outline login">Log in</button>
              </form>
             </div>
