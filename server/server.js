@@ -41,6 +41,9 @@ app.use("/api", tweak);
 var user = require("./routes/user");
 app.use("/api", user);
 
+var profile = require("./routes/profile");
+app.use("/api", profile);
+
 // var comments = require("./routes/comments");
 // app.use("/api", comments);
 

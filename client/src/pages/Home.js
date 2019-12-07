@@ -1,35 +1,8 @@
 import React, { Component } from 'react';
 import "../components/Home/style.css";
-import Main from './Main';
+// import Main from './Main';
 
-// class App extends Component {
-//     state = {
-//       tweaks: ["This is a test", "test of tweak"],
-//       tweak: ""
-//     };
-  
-//     // componentDidMount() {
-//     //   this.loadTweaks()
-//     // }
-  
-//     handleSubmit = event => {
-//       console.log("Tweak Submitted")
-//       this.setState((previousState) => {
-//         return {
-//           tweaks: previousState.tweaks.concat(previousState.tweak),
-//           tweak: ""
-//         }
-        
-//       })
-//     };
-  
-//     handleInputChange = event => {
-//       const { name, value } = event.target;
-//       // console.log(name, value)
-//       this.setState({
-//         [name]: value
-//       });
-//     };
+
 
 function Home(props) {
     return(
@@ -65,12 +38,8 @@ function Home(props) {
 
                 <h4>Join Tweak today.</h4>
 
-<<<<<<< HEAD
-                <button type="submit" className="btn btn signIn" >Sign up</button>
-                
-=======
                 <button type="submit" className="btn signIn">Sign up</button>
->>>>>>> master
+                
                 <button type="submit" className="btn btn-outline login">Log in</button>
              </form>
             </div>
