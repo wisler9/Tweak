@@ -1,10 +1,10 @@
 module.exports = function(sequelize, DataTypes) {
-    var Profile = sequelize.define("Profile", {
+    var Profiles = sequelize.define("Profiles", {
         Name: DataTypes.STRING,
         Bio: DataTypes.TEXT,
         Tweak:DataTypes.TEXT,
         Tweaks: DataTypes.TEXT,
     });
 
-    return Profile;
+    return Profiles;
 };
