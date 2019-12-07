@@ -111,11 +111,12 @@ body {
     color: #AD1616;
 }
 
-.btn-secondary {
-    /* position: absolute;
-    top: 4%;
-    left: 75%; */
+.createBtn {
+    position: relative;
+    top: 0%;
+    left: 75%;
+    width: 10%;
 
-   border-radius: 30px
+    border-radius: 30px;
 }
 
