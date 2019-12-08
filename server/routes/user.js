@@ -6,6 +6,8 @@ var db = require("../models/index");
 
 //get users
 router.get("/user", function(req, res) {
+
+  console.log(res.body); 
     db.User.findAll({ })
     .then(function(user){
       res.json(user);
