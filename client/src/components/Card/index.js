@@ -1,17 +1,19 @@
 import React,  {Component} from 'react';
+import "./style.css";
 
 const Card = (props) => {
     console.log(props)
     return (
-        <div className="card bg-dark text-white">
-            <img src="..." className="card-img" alt="..."/>
-            {/* <h5 className="card-title">Tweak Title</h5> */}
-            <div className="form-group">
-            <textarea value={props.value} className="form-control" rows="5" name="tweak" onChange={props.onChange}/>
-            <button className="btn btn-success" onClick={props.handleSubmit}>Submit</button>
+        <div className="card tweakCard">
+            <div class="card-body">
+                <textarea value={props.value} className="form-control" rows="" name="tweak" onChange={props.onChange}>
+                </textarea>
+                <button className="btn btn-secondary-outline addTweakBtn" onClick={props.handleSubmit}>Tweak</button>
+                {/* <a href="#" class="card-link" role="button">Card link</a>
+                <a href="#" class="card-link" role="button">Another link</a> */}
             </div>
         </div>
     );
 };
-
+ 
 export default Card;

@@ -1,0 +1,31 @@
+.tweakCard {
+    
+    margin-bottom: 10px;
+    
+}
+
+.listItem {
+    margin-bottom: 20px;
+    padding: 0.25rem;
+}
+.card-body {
+    margin-bottom: 2%;
+}
+.tweatText {
+    margin-bottom: 20px;
+    padding: 0.25rem;
+}
+
+/* .addTweakBtn {
+    position: relative;
+    border: 1px solid #AD1616;
+    color: #AD1616;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1% ;
+    top: 0%;
+    left: 75%;
+    border-radius: 30px;
+} */
+
+
