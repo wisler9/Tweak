@@ -50,21 +50,12 @@ class App extends Component {
       <Router>
       <div>
 
-
         <Switch>
         <Route path="/main" component={Main}/>
         <Route path ="/signup" component={SignUp}/>
          <Route path ="/" component={Home}/>
-         
-         
 
         </Switch>
-
-        
-      
-      
-       
-
       </div>
           </Router>
     )
