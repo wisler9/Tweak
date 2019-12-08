@@ -6,7 +6,7 @@ function SignUp() {
     <div className="container signup">
         <div className="row head">Create your account</div>
         <h1 className="logo">&lt;TWEAK/&gt;</h1>
-        <a href="https://placeholder.com"/><img src="https://via.placeholder.com/200" alt="" class="img-thumbnail" placeholder="Image"></img>
+        <a href="https://placeholder.com"/><img src="https://via.placeholder.com/200" alt="" className="img-thumbnail" placeholder="Image"></img>
         <form>
             <div className="form-group signup">
                 <label for="userName">User Name</label>
