@@ -49,21 +49,16 @@ class App extends Component {
       <Router>
       <div>
 
-
+        <Login />
+        <SignUp />
+    
         <Switch>
         <Route path="/main" component={Main}
          />
         <Route path ="/signup" component={SignUp}/>
          <Route path ="/" component={Home}/>
-         
-         
 
         </Switch>
-
-        
-      
-      
-       
 
       </div>
           </Router>
@@ -71,11 +66,6 @@ class App extends Component {
     }
 
   };
-
-
-
-
-
 
 
 export default App;
