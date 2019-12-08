@@ -1,4 +1,3 @@
-
 import React, {Component} from "react";
 
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
@@ -50,22 +49,24 @@ class App extends Component {
       <Router>
       <div>
 
+
+        <Login />
+        <SignUp />
+
         <Switch>
-        <Route path="/main" component={Main}/>
+        <Route path="/main" component={Main}
+         />
         <Route path ="/signup" component={SignUp}/>
          <Route path ="/" component={Home}/>
 
         </Switch>
+
       </div>
           </Router>
     )
     }
 
   };
-
-
-
-
 
 
 export default App;

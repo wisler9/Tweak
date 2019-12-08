@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import "../components/Home/style.css";
+// import Main from './Main';
 
-function Home() {
+
+
+function Home(props) {
     return(
      <div className="container">
          <div className="row">
@@ -22,7 +25,7 @@ function Home() {
                 <input type="email" className="form-control" id="Email" aria-describedby="emailHelp" placeholder="Username or email" />
                 <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                 <label for="InputPassword1"></label>
                 <input type="password" className="form-control" id="Password" placeholder="Password" />
                 </div>
@@ -36,6 +39,7 @@ function Home() {
                 <h4>Join Tweak today.</h4>
 
                 <button type="submit" className="btn signIn">Sign up</button>
+                
                 <button type="submit" className="btn btn-outline login">Log in</button>
              </form>
             </div>
