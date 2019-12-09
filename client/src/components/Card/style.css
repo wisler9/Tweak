@@ -1,0 +1,24 @@
+.tweakCard {
+    
+    margin-bottom: 10px;
+    
+}
+
+.card-body {
+padding: 0.25rem;
+}
+
+.addTweakBtn {
+    position: relative;
+    border: 1px solid #AD1616;
+    color: #AD1616;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1% ;
+    /* line-height: 1; */
+    top: 0%;
+    left: 75%;
+    border-radius: 30px;
+}
+
+
