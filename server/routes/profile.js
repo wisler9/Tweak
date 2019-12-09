@@ -39,6 +39,14 @@ router.put("/profile/:id", function(req,res){
         res.json(Profile);
       })
 })
-
+router.delete("/tweak/:id", function(req,res){
+    db.Profile.destroy({
+        where: {
+            id: req.params.id
+        }
+    }).then(function(tweakCreate){
+        res.json(tweakCreate);
+      })
+})
 module.exports= router;
 
