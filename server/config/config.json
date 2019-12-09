@@ -1,14 +1,14 @@
 {
     "development": {
       "username": "root",
-      "password": "Rasengan@9",
+      "password": "LMR0305",
       "database": "tweak_DB",
       "host": "localhost",
       "dialect": "mysql"
     },
     "test": {
       "username": "root",
-      "password": "Rasengan@9",
+      "password": "LMR0305",
       "database": "tweak_DB",
       "host": "localhost",
       "dialect": "mysql",

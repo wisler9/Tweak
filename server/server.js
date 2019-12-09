@@ -44,6 +44,9 @@ app.use("/api", user);
 var profile = require("./routes/profile");
 app.use("/api", profile);
 
+var login = require("./routes/login");
+app.use("/api", login);
+
 // var comments = require("./routes/comments");
 // app.use("/api", comments);
 
