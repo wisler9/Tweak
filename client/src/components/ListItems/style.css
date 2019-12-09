@@ -1,31 +1,21 @@
-.tweakCard {
-    
+.tweakCard {  
     margin-bottom: 10px;
-    
 }
-
-.listItem {
-    margin-bottom: 20px;
+.card {
+    margin-bottom: 3%;
+}
+.card.listItem {
+    margin-bottom: 3%;
     padding: 0.25rem;
 }
 .card-body {
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 .tweatText {
     margin-bottom: 20px;
     padding: 0.25rem;
 }
 
-/* .addTweakBtn {
-    position: relative;
-    border: 1px solid #AD1616;
-    color: #AD1616;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 1% ;
-    top: 0%;
-    left: 75%;
-    border-radius: 30px;
-} */
+
 
 
