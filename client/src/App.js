@@ -12,8 +12,8 @@ import Home from "./pages/Home";
 // import Login from "./components/Login";
 
 
-// import Card from "./components/Card";
-// import ListItems from "./components/ListItems";
+// imports Card from "./components/Card";
+// imports ListItems from "./components/ListItems";
 
 
 class App extends Component {
@@ -49,10 +49,6 @@ class App extends Component {
     return (
       <Router>
       <div>
-
-
-        {/* <Login />
-        <SignUp /> */}
 
         <Switch>
         <Route path="/main" component={Main}/>
