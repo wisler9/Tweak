@@ -20,7 +20,7 @@ class Profile extends Component {
         return {
           Name: "",
           Bio: "",
-          Experience: ""
+          Experience: "",
           Tweaks: [previousState.tweaks.concat(previousState.tweak)],
           Tweak: ""
         }
