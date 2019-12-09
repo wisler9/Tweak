@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 
+
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 // import SignUp from "./components/SignUp";
@@ -49,8 +50,8 @@ class App extends Component {
       <Router>
       <div>
 
-        <Login />
-        <SignUp />
+        {/* <Login /> */}
+        {/* <SignUp /> */}
     
         <Switch>
         <Route path="/main" component={Main}
