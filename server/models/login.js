@@ -1,10 +1,12 @@
 module.exports = function(sequelize, DataTypes) {
     var Login = sequelize.define("Login", {
-       email: DataTypes.STRING,
-    //    validate:{
-    //            max:23,
-    //            is: ["^[a-z]+$",'i']
-    //        },
+       email:{
+        type: DataTypes.INTEGER,
+        allowNull: true,
+        defaultValue: null,
+        validate: { max: 90 }
+      },
+       
        password: DataTypes.STRING
     });
 
