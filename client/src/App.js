@@ -50,8 +50,8 @@ class App extends Component {
       <div>
 
 
-        <Login />
-        <SignUp />
+        {/* <Login />
+        <SignUp /> */}
 
         <Switch>
         <Route path="/main" component={Main}
