@@ -47,9 +47,12 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-        {/* <Login /> */}
-        <SignUp />
+      <div>
+
+
+        {/* <Login />
+        <SignUp /> */}
+
         <Switch>
         <Route path="/main" component={Main}/>
         <Route path ="/signup" component={SignUp}/>
