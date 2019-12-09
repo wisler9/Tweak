@@ -14,7 +14,7 @@ var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "Rasengan@9",
+    password: process.env.PASSWORD,
     database: "tweak_DB"
   });
   
