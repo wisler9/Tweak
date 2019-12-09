@@ -1,7 +1,7 @@
-{
+module.exports = {
     "development": {
       "username": "root",
-      "password": "Rasengan@9",
+      "password": process.env.PASSWORD,
       "database": "tweak_DB",
       "host": "localhost",
       "dialect": "mysql"
@@ -19,3 +19,4 @@
       "dialect": "mysql"
     }
   }
+
