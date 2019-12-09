@@ -120,3 +120,8 @@ body {
     border-radius: 30px;
 }
 
+@media screen and (max-width: 420px) {
+    
+}
+
+@media screen and (max-width: 768px) {}
