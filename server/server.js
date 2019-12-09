@@ -1,5 +1,5 @@
 require('dotenv').config()
-console.log(process.env.PASSWORD);
+// console.log(process.env.PASSWORD);
 var db = require("./models");
 // Require axios and cheerio. This makes the scraping possible
 // var axios = require("axios");
