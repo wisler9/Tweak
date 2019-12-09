@@ -5,7 +5,7 @@ import ListItems from "../components/ListItems/index"
 
 class Main extends Component {
     state = {
-      tweaks: ["This is a test", "test of tweak"],
+      tweaks: ["Top Programming Blogs to Improve Your Skills: Coding Horror, David Walsh, A List Apart", "test of tweak"],
       tweak: ""
     };
   
@@ -68,9 +68,6 @@ class Main extends Component {
               </div>
             </div>
           </div>
-                
-
-
         </div>
         
       )

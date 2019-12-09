@@ -1,7 +1,11 @@
-{
+module.exports = {
     "development": {
       "username": "root",
+<<<<<<< HEAD:server/config/config.json
       "password": "LMR0305",
+=======
+      "password": process.env.PASSWORD,
+>>>>>>> master:server/config/config.js
       "database": "tweak_DB",
       "host": "localhost",
       "dialect": "mysql"
@@ -19,3 +23,4 @@
       "dialect": "mysql"
     }
   }
+

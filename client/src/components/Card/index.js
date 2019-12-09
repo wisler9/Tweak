@@ -6,6 +6,7 @@ const Card = (props) => {
     return (
         <div className="card tweakCard">
             <div class="card-body">
+                
                 <textarea value={props.value} className="form-control" rows="" name="tweak" onChange={props.onChange}>
                 </textarea>
                 <button className="btn btn-secondary-outline addTweakBtn" onClick={props.handleSubmit}>Tweak</button>
