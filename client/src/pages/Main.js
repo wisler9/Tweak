@@ -38,6 +38,8 @@ class Main extends Component {
           <div className="container menuBox">
             <h1 className="menuLogo">&lt;TWEAK/&gt;</h1>
             <div className="menuLinks">
+              <a className="explore" href="/user/:id"><h2>Explore</h2></a>
+              <a className="messages" href="/user/:id"><h2>Messages</h2></a>
               <a className="profile" href="/user/:id"><h2>Profile</h2></a>
             </div>
           </div>
