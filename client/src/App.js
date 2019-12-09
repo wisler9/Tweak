@@ -12,8 +12,8 @@ import Home from "./pages/Home";
 // import Login from "./components/Login";
 
 
-// import Card from "./components/Card";
-// import ListItems from "./components/ListItems";
+// imports Card from "./components/Card";
+// imports ListItems from "./components/ListItems";
 
 
 class App extends Component {
