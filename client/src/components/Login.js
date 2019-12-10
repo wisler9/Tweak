@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from  "axios";
+
 
 class Login extends React.Component {
     constructor(props) {
@@ -22,12 +22,7 @@ class Login extends React.Component {
     handleSubmit(event) {
       // console.log(this.state.userName)
     event.preventDefault();
-    axios.post('/api/user', {
-      email: this.state.email,
-      password: this.state.password,
-    }).then( res => {
-          console.log(res)
-    })
+   
   }
 
     
