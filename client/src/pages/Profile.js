@@ -5,6 +5,7 @@ class Profile extends Component {
     state = {
       Name: "",
       Bio: "",
+      Experience: "",
       Tweak:"",
       Tweaks: []
 
