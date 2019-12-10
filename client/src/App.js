@@ -56,13 +56,15 @@ class App extends Component {
         <SignUp /> */}
 
         <Switch>
+        <Route path="/profile" component={Profile}/>
+
         <Route path="/main" component={Main} 
         />
         <Route path ="/signup" component={SignUp}/>
-         <Route path ="/" component={Home}/>
+        
          <Route path="/login" component={Login}/> 
-         <Route exact path="/profile" component={Profile}/>
 
+         <Route path ="/" component={Home}/>
         </Switch>
 
       </div>
