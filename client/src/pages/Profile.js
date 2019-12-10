@@ -9,7 +9,7 @@ class Profile extends Component {
       Bio: "",
       Experience: "",
       Tweak:"",
-      Tweaks: []
+      Tweaks: ["I am a beginner Full Stack web developer", "I have learned the MERN stack"]
 
     };
   
@@ -51,7 +51,7 @@ class Profile extends Component {
               <a className="messages" href="/user/:id"><h2>Messages</h2></a>
             </div>
           </div>
-
+{/* 
           <div className="container tweakBox">
             <h2>Home</h2>
           <Card 
@@ -63,7 +63,7 @@ class Profile extends Component {
                <ListItems 
                tweaks={this.state.tweaks}
                />  
-          </div>
+          </div> */}
 
           <div className="container bioBox">
             <h2>Profile</h2>
