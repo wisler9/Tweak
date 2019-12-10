@@ -68,7 +68,7 @@ class Home extends React.Component {
                         <h1>&lt;TWEAK/&gt;</h1>
                         <h3>See what's happening in coding right now</h3>
 
-            <div className="col md-6" id="login-area">
+                          <div className="col md-6" id="login-area">
 
 
                         <h4>Join Tweak today.</h4>
@@ -76,6 +76,7 @@ class Home extends React.Component {
                         <button type="submit" className="btn signIn">Sign up</button>
                         
                         <button type="submit" className="btn btn-outline login">Log in</button>
+                        </div>
                     </form>
                     </div>
                 </div>
