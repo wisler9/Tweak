@@ -31,7 +31,7 @@ function Home(props) {
                 </div>
                 <div className="form-group form-check">
                 </div>
-                <button type="submit" className="btn btn-outline-primary login">Log in</button>
+                <button type="submit" className="btn btn-outline-secondary login">Log in</button>
                 
                 <h1>&lt;TWEAK/&gt;</h1>
                 <h3>See what's happening in coding right now</h3>
