@@ -26,7 +26,7 @@ class SignUp extends React.Component {
   
     handleSubmit(event) {
         // console.log(this.state.userName)
-        console.log("dssddfs")
+        // console.log("dssddfs")
       event.preventDefault();
       axios.post('/api/user', {
         userName: this.state.userName,
@@ -46,29 +46,29 @@ class SignUp extends React.Component {
             console.log(this.state);
             return (
             <div className="container signup">
-                {/* <div className="row head">Create your account</div>
+                <div className="row head">Create your account</div>
                 <h1 className="logo">&lt;TWEAK/&gt;</h1>
-                <a href="https://placeholder.com"/><img src="https://via.placeholder.com/200" alt="" className="img-thumbnail" placeholder="Image"></img> */}
-                <form>
+                <a href="https://placeholder.com"/><img src="https://via.placeholder.com/200" alt="" className="img-thumbnail" placeholder="Image"></img>
+                <form onSubmit={this.handleSubmit}>
                     <div className="form-group signup">
-                        <label for="userName">User Name</label>
+                        <label htmlFor="userName">User Name</label>
                         <input type="text" onChange={this.handleChange} name="username"className="form-control" id="userName" aria-describedby="userName" placeholder="Enter username" />
                     </div>
                     <div className="form-group signup">
-                        <label for="userEmail">Email address</label>
+                        <label htmlFor="userEmail">Email address</label>
                         <input type="email" onChange={this.handleChange} name="email"  className="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="Enter email" />
                     </div>
                     <div className="form-group signup">
-                        <label for="userPassword">Password</label>
+                        <label htmlFor="userPassword">Password</label>
                         <input type="password" onChange={this.handleChange} name="password" className="form-control" id="userPassword" placeholder="Password" />
                     </div>
                     <div className="form-group signup">
-                        <label for="bio">userBio</label>
+                        <label htmlFor="bio">userBio</label>
                         <textarea onChange={this.handleChange}  name="bio" className="form-control" id="userBio" rows="3"></textarea>
                     </div>
                     
                     <div className="form-group signup">
-                        <label for="userExperience">Experience</label>
+                        <label htmlFor="userExperience">Experience</label>
                         <textarea onChange={this.handleChange}  name="experience" className="form-control" id="userExperience" rows="3"></textarea>
                     </div>
                     <button type="submit" className="btn btn-secondary createBtn">Submit</button>
