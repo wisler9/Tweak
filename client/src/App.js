@@ -60,6 +60,7 @@ class App extends Component {
         <Route path="/main" component={Main}/>
         <Route path ="/signup" component={SignUp}/>
          {/* <Route path="/login" component={Login}/>  */}
+
          <Route path ="/" component={Home}/>
         </Switch>
 
