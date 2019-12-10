@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from  "axios";
+import axios from "axios";
 import "../components/Home/style.css";
 
 
@@ -42,8 +42,6 @@ class Home extends React.Component {
                     <div className="col md-6" id="app-promo">
                         <div className="container-home app-promo">
                             <h1>&lt;TWEAK/&gt;</h1>
-
-
                             <h3 className="homeText" id="box1">Follow your interests</h3>
                             <h3 className="homeText" id="box2">Hear what other people are talking about</h3>
                             <h3 className="homeText" id="box3">Join the conversation</h3>
@@ -51,6 +49,7 @@ class Home extends React.Component {
                     </div>
 
                     <div className="col md-6" id="login-area">
+                        
                     <form onSubmit={this.handleSubmit}>
                         <div className="form-group">
                         <label htmlFor="InputEmail1"></label>
@@ -67,16 +66,14 @@ class Home extends React.Component {
                         
                         <h1>&lt;TWEAK/&gt;</h1>
                         <h3>See what's happening in coding right now</h3>
-
-            <div className="col md-6" id="login-area">
-
-
+        
                         <h4>Join Tweak today.</h4>
 
                         <button type="submit" className="btn signIn">Sign up</button>
                         
                         <button type="submit" className="btn btn-outline login">Log in</button>
                     </form>
+                
                     </div>
                 </div>
             </div>

@@ -38,7 +38,7 @@ class Main extends Component {
           <div className="container menuBox">
             <h1 className="menuLogo">&lt;TWEAK/&gt;</h1>
             <div className="menuLinks">
-              <a className="explore" href="/user/:id"><i className="fa fa-compass"></i><i className="fontastic">a</i><h2>Explore</h2></a>
+              <a className="explore" href="/user/:id"><icon className="fa fa-compass"></icon><i className="fontastic">a</i><h2>Explore</h2></a>
               <a className="messages" href="/user/:id"><i className="fa fa-envelope"><h2> Messages</h2></i></a>
               <a className="profile" href="/user/:id"><i className="fa fa-user-circle"></i><h2>Profile</h2></a>
             </div>

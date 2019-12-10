@@ -59,7 +59,6 @@
     background: #FFFFFF;
     border: 1px solid #E5E5E5;
     box-sizing: border-box;
-
     
 }
 
@@ -109,6 +108,8 @@
     left: 75%;
     border-radius: 30px
 }
+
+/* fontastic */
 @charset "UTF-8";
 
 @font-face {
