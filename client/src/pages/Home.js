@@ -36,7 +36,9 @@ function Home(props) {
                 <h1>&lt;TWEAK/&gt;</h1>
                 <h3>See what's happening in coding right now</h3>
                 <h4>Join Tweak today.</h4>
+                <Link to="/signup">
                 <button type="submit" className="btn signIn">Sign up</button>
+                </Link>
                 <Link to={"/main"}>
                 <button type="submit" className="btn btn-outline login"> Log in</button>
                 </Link>
