@@ -1,6 +1,6 @@
 import React from "react";
 import "../components/SignUp/style.css";
-import axios from  "axios";
+// import axios from  "axios";
 import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 
 
@@ -29,15 +29,15 @@ class SignUp extends React.Component {
         // console.log(this.state.userName)
         // console.log("dssddfs")
       event.preventDefault();
-      axios.post('/api/user', {
-        userName: this.state.userName,
-        email: this.state.email,
-        password: this.state.password,
-        bio: this.state.bio,
-        experience: this.state.experience,
-      }).then( res => {
-            console.log(res)
-      })
+    //   axios.post('/api/user', {
+    //     userName: this.state.userName,
+    //     email: this.state.email,
+    //     password: this.state.password,
+    //     bio: this.state.bio,
+    //     experience: this.state.experience,
+    //   }).then( res => {
+    //         console.log(res)
+    //   })
     }
 
     

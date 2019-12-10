@@ -1,6 +1,7 @@
 import React, {Component} from "react";
-import Card from "../components/Card"
-import ListItems from "../components/ListItems"
+// import Card from "../components/Card"
+// import ListItems from "../components/ListItems"
+import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 
 
 class Profile extends Component {
@@ -46,8 +47,12 @@ class Profile extends Component {
           <div className="container menuBox">
             <h1 className="menuLogo">&lt;TWEAK/&gt;</h1>
             <div className="menuLinks">
+              <Link to="/main">
               <a className="home" href="/user/:id"><h2>Home</h2></a>
+              </Link>
+             
               <a className="explore" href="/user/:id"><h2>Explore</h2></a>
+              
               <a className="messages" href="/user/:id"><h2>Messages</h2></a>
             </div>
           </div>

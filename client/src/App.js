@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import Main from "./pages/Main";
 import SignUp from "./pages/SignUp";
 import Home from "./pages/Home";
-import Login from "./components/Login";
+// import Login from "./components/Login";
 import Profile from "./pages/Profile"
 
 
@@ -63,7 +63,7 @@ class App extends Component {
         <Route path ="/signup" component={SignUp}/>
 
          
-         <Route path="/login" component={Login}/> 
+         {/* <Route path="/login" component={Login}/>  */}
 
          <Route path ="/" component={Home}/>
 
