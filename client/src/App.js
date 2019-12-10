@@ -56,15 +56,24 @@ class App extends Component {
         <SignUp /> */}
 
         <Switch>
+        <Route path="/profile" component={Profile}/>
+
         <Route path="/main" component={Main} 
         />
         <Route path ="/signup" component={SignUp}/>
+<<<<<<< HEAD
+        
+=======
 
          <Route path ="/" component={Home}/>
+>>>>>>> master
          <Route path="/login" component={Login}/> 
-         <Route exact path="/profile" component={Profile}/>
 
+<<<<<<< HEAD
+         <Route path ="/" component={Home}/>
+=======
 
+>>>>>>> master
         </Switch>
 
       </div>
