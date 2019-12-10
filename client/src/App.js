@@ -9,11 +9,11 @@ import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import Main from "./pages/Main";
 import SignUp from "./pages/SignUp";
 import Home from "./pages/Home";
-import Login from "./components/Login";
+// import Login from "./components/Login";
 
 
-// import Card from "./components/Card";
-// import ListItems from "./components/ListItems";
+// imports Card from "./components/Card";
+// imports ListItems from "./components/ListItems";
 
 
 class App extends Component {
@@ -50,24 +50,12 @@ class App extends Component {
       <Router>
       <div>
 
-
-        {/* <Login />
-        <SignUp /> */}
-
         <Switch>
-<<<<<<< HEAD
-        <Route path="/main" component={Main}
-        
-         />
-        <Route path ="/signup" component={SignUp}/>
-         <Route path ="/" component={Home}/>
-         <Route path="/login" component={Login}/>
-
-=======
         <Route path="/main" component={Main}/>
         <Route path ="/signup" component={SignUp}/>
-        <Route path ="/" component={Home}/>
->>>>>>> master
+         <Route path ="/" component={Home}/>
+         {/* <Route path="/login" component={Login}/> */}
+
         </Switch>
         </div>
 
