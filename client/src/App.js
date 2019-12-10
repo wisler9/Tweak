@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import Main from "./pages/Main";
 import SignUp from "./pages/SignUp";
 import Home from "./pages/Home";
+import Profile from "./pages/Profile";
 // import Login from "./components/Login";
 
 
@@ -53,8 +54,8 @@ class App extends Component {
         <Switch>
         <Route path="/main" component={Main}/>
         <Route path ="/signup" component={SignUp}/>
-         <Route path ="/" component={Home}/>
-         {/* <Route path="/login" component={Login}/> */}
+        <Route path ="/" component={Home}/>
+        <Route path="/profile" component={Profile}/>
 
         </Switch>
         </div>
