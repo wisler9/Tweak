@@ -13,7 +13,7 @@ var PORT = process.env.PORT || 3001;
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static(path.join("client/build")));
+app.use(express.static("client/build"));
 
 var syncOptions = { force: false };
 
