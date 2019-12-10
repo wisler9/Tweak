@@ -25,7 +25,7 @@ class Home extends React.Component {
     handleSubmit(event) {
       // console.log(this.state.userName)
     event.preventDefault();
-    axios.post('/api/tweak', {
+    axios.post('/api/login', {
       email: this.state.email,
       password: this.state.password,
     }).then( res => {
