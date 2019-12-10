@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import "../components/Home/style.css";
-
-
-
+import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 
 function Home(props) {
     return(
@@ -31,16 +29,25 @@ function Home(props) {
                 </div>
                 <div className="form-group form-check">
                 </div>
+                <Link to={"/main"}>
                 <button type="submit" className="btn btn-outline-secondary login">Log in</button>
+                </Link>
+                
                 
                 <h1>&lt;TWEAK/&gt;</h1>
                 <h3>See what's happening in coding right now</h3>
 
                 <h4>Join Tweak today.</h4>
 
+                <Link to={"/signup"}>
                 <button type="submit" className="btn signIn">Sign up</button>
-                
+                </Link>
+
+
+                <Link to={"/main"}>
                 <button type="submit" className="btn btn-outline login">Log in</button>
+                </Link>
+    
              </form>
             </div>
          </div>
