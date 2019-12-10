@@ -47,4 +47,19 @@ export default {
   deleteUser: function(id) {
     return axios.delete("/api/comments/" + id);
   },
+
+
+
+  getProfile: function(id) {
+    return axios.get("/api/profile/" + id);
+  },
+  updateProfile: function(id) {
+    return axios.put("/api/profile/" + id);
+  },
+  createProfile: function(id) {
+    return axios.post("/api/profile/");
+  },
+  deleteProfile: function(id) {
+    return axios.delete("/api/user/" + id);
+  },
 };
