@@ -1,5 +1,7 @@
-import React from "react";
-import Profile from "../components/Profile/index";
+import React, {Component} from "react";
+import Card from "../components/Card"
+import ListItems from "../components/ListItems"
+
 
 class Profile extends Component {
     state = {
@@ -17,12 +19,12 @@ class Profile extends Component {
   
     handleSubmit = event => {
      
-      this.setState((previousState) => {
+      this.setState(() => {
         return {
           Name: "",
           Bio: "",
           Experience: "",
-          Tweaks: [previousState.tweaks.concat(previousState.tweak)],
+          Tweaks: [],
           Tweak: ""
         }
         
@@ -30,10 +32,10 @@ class Profile extends Component {
     };
   
     handleInputChange = event => {
-      const { Tweaks:[value], Tweak:value } = event.target;
+      const { Tweaks, Tweak } = event.target;
       // console.log(name, value)
       this.setState({
-        Tweaks: [previousState.tweaks.concat(previousState.tweak)],
+        Tweaks: [],
           Tweak: ""
       });
     };
@@ -114,4 +116,4 @@ class Profile extends Component {
 // </div>
 // )
 // }
-     export default  Main
+     export default  Profile
