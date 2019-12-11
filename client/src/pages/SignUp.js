@@ -88,7 +88,7 @@ class SignUp extends React.Component {
                         <textarea onChange={this.handleChange}  name="experience" className="form-control" id="userExperience" rows="3"></textarea>
                     </div>
                 
-                    <button type="submit" className="btn btn-secondary createBtn">Submit</button>
+                    <button type="submit" className="btn createBtn">Submit</button>
               
 
                     </form>
