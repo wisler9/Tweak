@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/SignUp/style.css";
 import axios from  "axios";
+import { withRouter} from "react-router-dom";
 
 
 class SignUp extends React.Component {
@@ -18,6 +19,9 @@ class SignUp extends React.Component {
       this.handleSubmit = this.handleSubmit.bind(this);
     }
   
+    constuctor() {
+        this.routeChange = this.routeChange.bind(this);
+      }
     handleChange(event) {
         // event.preventDefault();
         this.setState({[event.target.name] : event.target.value});
@@ -28,15 +32,27 @@ class SignUp extends React.Component {
         // console.log(this.state.userName)
         // console.log("dssddfs")
       event.preventDefault();
-      axios.post('/api/user', {
+      const user = {
         userName: this.state.userName,
         email: this.state.email,
         password: this.state.password,
         bio: this.state.bio,
         experience: this.state.experience,
-      }).then( res => {
-            console.log(res)
-      })
+      }
+      localStorage.removeItem("user");
+      localStorage.setItem("user", JSON.stringify(user));
+      let path = "profile";
+      this.props.history.push(path);
+
+    //   axios.post('/api/user', {
+    //     userName: this.state.userName,
+    //     email: this.state.email,
+    //     password: this.state.password,
+    //     bio: this.state.bio,
+    //     experience: this.state.experience,
+    //   }).then( res => {
+    //         console.log(res)
+    //   })
     }
 
     
@@ -71,7 +87,10 @@ class SignUp extends React.Component {
                         <label htmlFor="userExperience">Experience</label>
                         <textarea onChange={this.handleChange}  name="experience" className="form-control" id="userExperience" rows="3"></textarea>
                     </div>
+                
                     <button type="submit" className="btn btn-secondary createBtn">Submit</button>
+              
+
                     </form>
             </div>
         );
@@ -80,4 +99,4 @@ class SignUp extends React.Component {
 
 
 
-export default SignUp;
+export default withRouter(SignUp) 

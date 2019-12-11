@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "../components/Main/style.css";
 import Card from "../components/Card/index"
 import ListItems from "../components/ListItems/index"
-import TrendingCard from '../components/trendingCard';
+import TrendingCard from '../components/TrendingCard';
 import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 
 
@@ -14,16 +14,15 @@ class Main extends Component {
       tweak: "",
       trending: [
         {
-            
+          image: "./images/albino-reticulated-python.png",
             title: "Octoverse 2019: Python slithers past Java to become GitHub’s second most popular language",
             link: "https://www.developer-tech.com/news/2019/nov/08/octoverse-2019-python-java-github-most-popular-language/"
         },
         {
-                
-                title: "Mobile game company N3twork secures $40 million in series C funding",
-                link: "https://www.developer-tech.com/news/2019/nov/29/mobile-game-company-n3twork-secures-40-million-series-c-funding/"
+          image: "./images/iStock.png",
+            title: "Mobile game company N3twork secures $40 million in series C funding",
+            link: "https://www.developer-tech.com/news/2019/nov/29/mobile-game-company-n3twork-secures-40-million-series-c-funding/"
         }
-        
         ]
     };
   
@@ -51,26 +50,24 @@ class Main extends Component {
     };
   
     render() {
-      const trend = this.state.trending.map(trending =>
-        <TrendingCard
-      
-        key={trending.id}
-        link={trending.link}
-        title={trending.title}>
-          
-        </TrendingCard>
-        
-        )
+
       return (
         <div>
           <div className="container menuBox">
             <h1 className="menuLogo">&lt;TWEAK/&gt;</h1>
             <div className="menuLinks">
-              <a className="explore" href="/user/:id"><icon className="fa fa-compass"></icon><i className="fontastic">a</i><h2>Explore</h2></a>
-              <a className="messages" href="/user/:id"><i className="fa fa-envelope"><h2> Messages</h2></i></a>
-        <Link to={"/profile"}>
-              <a className="profile" href="/user/:id"><i className="fa fa-user-circle"></i><h2>Profile</h2></a>
+              <div>
+              <a className="explore" href="/user/:id"><icon className="fa fa-compass fa-3x"></icon><h2>  Explore</h2></a>
+              </div>
+           <div>
+           <a className="messages" href="/user/:id"><icon className="fa fa-envelope"><h2>  Messages</h2></icon></a>
+           </div>
+              <div>
+              <Link to={"/profile"}>
+              <a className="profile" href="/user/:id"><icon className="fa fa-user-circle"></icon><h2>  Profile</h2></a>
               </Link>
+              </div>
+
             </div>
           </div>
 
@@ -89,20 +86,25 @@ class Main extends Component {
 
           <div className="container trendingBox">
             <h2>Trending</h2>
+            <hr></hr>
             <div className="wrapper">
-            <div className="card"> 
-                <div className="card-body">
-                  <h5 className="card-title">{trend.title}</h5>
-                  {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
-                  <a href={trend.link} className="btn btn-primary">{trend.title}</a>
+            {this.state.trending.map(trend => {
+              return (
+                <TrendingCard
+                image={trend.image}
+                link={trend.link}
+                title={trend.title}>
+                </TrendingCard>
+              )
+            })
+          }
+
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+              </div>
         
       )
-      }
+    }
   
     };
   
