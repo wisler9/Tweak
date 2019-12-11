@@ -13,3 +13,7 @@ hr {
 .trendLnk {
     padding: 2%;
 }
+
+body,html {
+    overflow: hidden;
+}
