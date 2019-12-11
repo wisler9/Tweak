@@ -80,7 +80,7 @@
 }
 .btn-secondary.bio{
     position: absolute;
-    top: 75%;
+    /* top: 75%; */
     left: 75%;
     border-radius: 30px
 }

@@ -61,6 +61,9 @@ class Main extends Component {
           <div className="container menuBox">
             <h1 className="menuLogo">&lt;TWEAK/&gt;</h1>
             <div className="menuLinks">
+            <div className="menu">
+              <a className="home" href="/main"><icon class="fa fa-home fa-2x"></icon><h2>Home</h2></a>
+              </div>
               <div className="menu">
               <a className="explore" href="/user/:id"><icon className="fa fa-compass fa-2x"></icon><h2>  Explore</h2></a>
               </div>

@@ -65,7 +65,6 @@ class Profile extends Component {
                   <p>Email: {user.email}</p>
                   <p className="card-text">Bio: {user.bio}</p>
                   <p className="card-text">Experience: {user.experience}</p>
-                  <a href="/main" className="btn btn-secondary bio">Home</a>
                 </div>
               </div>
             </div>
