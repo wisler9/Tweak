@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 // import Card from "../components/Card"
 // import ListItems from "../components/ListItems"
+import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 
 
 class Profile extends Component {

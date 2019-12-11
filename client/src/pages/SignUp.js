@@ -4,6 +4,8 @@ import axios from  "axios";
 import { withRouter} from "react-router-dom";
 
 
+
+
 class SignUp extends React.Component {
     constructor(props) {
       super(props);
@@ -87,9 +89,7 @@ class SignUp extends React.Component {
                         <label htmlFor="userExperience">Experience</label>
                         <textarea onChange={this.handleChange}  name="experience" className="form-control" id="userExperience" rows="3"></textarea>
                     </div>
-                
                     <button type="submit" className="btn btn-secondary createBtn">Submit</button>
-              
 
                     </form>
             </div>
