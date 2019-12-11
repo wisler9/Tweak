@@ -33,7 +33,7 @@ class SignUp extends React.Component {
         // console.log("dssddfs")
       event.preventDefault();
       const user = {
-        userName: this.state.userName,
+        username: this.state.username,
         email: this.state.email,
         password: this.state.password,
         bio: this.state.bio,

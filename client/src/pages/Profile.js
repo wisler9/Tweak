@@ -61,10 +61,10 @@ class Profile extends Component {
             <div className="card">
                 <img src="https://via.placeholder.com/200" className="card-img-top" alt="placeholder"/>
                 <div className="card-body">
-                  <p>{user.userName}</p>
-                  <p>{user.email}</p>
-                  <p className="card-text">{user.bio}</p>
-                  <p className="card-text">{user.experience}</p>
+                  <p>Username: {user.username}</p>
+                  <p>Email: {user.email}</p>
+                  <p className="card-text">Bio: {user.bio}</p>
+                  <p className="card-text">Experience: {user.experience}</p>
                   <a href="/main" className="btn btn-secondary bio">Home</a>
                 </div>
               </div>
@@ -98,30 +98,4 @@ class Profile extends Component {
   
 
 
-
-
-// function Main(){
-// return(
-//     <div>
-// <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-//        <a className="navbar-brand" href="/">
-//          {`<TWEAK/>`}
-//         </a>
-//        <a className="navbar-brand" href="/user">
-//         Profile
-//         </a>
-//         </nav> 
-  
-//        <Card 
-//       value={this.state.tweak}
-//       onChange={this.handleInputChange}
-//       name="tweak"
-//       handleSubmit={this.handleSubmit}
-//        />
-//        <ListItems 
-//        tweaks={this.state.tweaks}
-//        />  
-// </div>
-// )
-// }
      export default  Profile
