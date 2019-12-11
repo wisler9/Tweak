@@ -3,12 +3,15 @@ import "./style.css";
 
 const TrendingCard = (props) => {
     return(
-        <div className="card trending-card" 
-        onClick= {()=> props.handleClick(props.id)}
-        
-        >
+        <div className="card trending-card">
             <div>
-                <a href={props.link}>{props.title}</a>
+                <div className="trendImg">
+                <img src={props.image} className="image-fluid"></img>
+                </div>
+                <hr></hr>
+                <div className="card-body trendLnk">
+                <a href={props.link} target="_blank">{props.title}</a>
+                </div>
             </div>
         </div>
     );
