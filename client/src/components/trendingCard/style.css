@@ -1,0 +1,15 @@
+img {
+    height: 150px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 2%;
+}
+hr {
+    margin-top: .25rem;
+}
+.trending-card {
+    margin-bottom: 3%;
+}
+.trendLnk {
+    padding: 2%;
+}
