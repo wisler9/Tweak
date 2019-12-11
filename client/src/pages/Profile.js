@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 // import Card from "../components/Card"
 // import ListItems from "../components/ListItems"
+import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 
 
 class Profile extends Component {
@@ -15,7 +16,9 @@ class Profile extends Component {
             <h1 className="menuLogo">&lt;TWEAK/&gt;</h1>
             <div className="menuLinks">
               <a className="home" href="/main"><h2>Home</h2></a>
+
               <a className="explore" href="/user/:id"><h2>Explore</h2></a>
+              
               <a className="messages" href="/user/:id"><h2>Messages</h2></a>
             </div>
           </div>
