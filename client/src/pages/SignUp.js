@@ -35,7 +35,7 @@ class SignUp extends React.Component {
         // console.log("dssddfs")
       event.preventDefault();
       const user = {
-        userName: this.state.userName,
+        username: this.state.username,
         email: this.state.email,
         password: this.state.password,
         bio: this.state.bio,
@@ -89,8 +89,9 @@ class SignUp extends React.Component {
                         <label htmlFor="userExperience">Experience</label>
                         <textarea onChange={this.handleChange}  name="experience" className="form-control" id="userExperience" rows="3"></textarea>
                     </div>
-
-                    <button type="submit" className="btn btn-secondary createBtn">Submit</button>
+                
+                    <button type="submit" className="btn createBtn">Submit</button>
+              
 
                     </form>
             </div>
