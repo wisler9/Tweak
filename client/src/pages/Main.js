@@ -4,7 +4,7 @@ import Card from "../components/Card/index"
 import ListItems from "../components/ListItems/index"
 import TrendingCard from '../components/trendingCard';
 import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
-
+import Profile from "./Profile"
 
 
 
